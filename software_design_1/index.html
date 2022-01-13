@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1724560_박무진_term_project</title>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="./index.js"></script>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cont">
+        <h2>수강 신청</h2>
+        <div class="signCont">
+          <div class="tabs">
+            <span class="tab signIn active">
+              <a>로그인</a>
+            </span>
+            <span class="tab signUp">
+              <a>회원가입</a>
+            </span>
+          </div>
+          <div class="confirmCont">
+            <div class="inputCont">
+              <input type="id" id="id" class="inp" placeholder="ID" />
+              <input type="password" id="pw" class="inp" placeholder="PASSWORD" />
+            </div>
+            <div class="loginBtnCont">
+              <button class="btn" id="signInBtn">로그인</button>
+            </div>
+          </div>
+          <div class="signUpCont">
+            <div class="inputCont">
+              <input type="name" id="newName" class="inp" placeholder="이름" />
+              <input type="id" id="newId" class="inp" placeholder="ID" />
+              <input type="password" id="newPw" class="inp" placeholder="PASSWORD" />
+            </div>
+            <div class="submitBtnCont">
+              <button class="signUpBtn" id="signUpBtn">회원가입</button>
+            </div>
+          </div>
+        </div>
+        <div class="enrollCont">
+          <div class='userInfoCont'>
+            <button class='logoutBtn' id='logoutBtn'>로그아웃</button>
+          </div>
+          <div class='selectCont'>
+              <select id='selectYear' class='selectBox'>
+                  <option value="">학년</option>
+                  <option value="1st">1학년</option>
+                  <option value="2nd">2학년</option>
+                  <option value="3rd">3학년</option>
+                  <option value="4th">4학년</option>
+              </select>
+              <select id='selectSubject' class='selectBox'>
+                  <option value="">과목</option>
+              </select>
+              <input type="text" id="subjectTime" class='timeInp' placeholder="강의시간" />
+          </div>
+          <div class='applyBtnCont'>
+            <button class="applyBtn" id="applyBtn">신청</button>
+          </div>
+          <div class='checkCont'>
+            <button class="checkScheduleBtn" id="checkScheduleBtn">시간표 확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <p style='text-align: center'>Copyright 2021. moomin All rights reserved</p>
+    </div>
+  </body>
+</html>
